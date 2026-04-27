@@ -4,6 +4,19 @@ id: fetch-tickets
 title: Fetch Tickets
 description: "Retrieves and structures sprint tickets from Linear via MCP"
 tags: [Production, Project Management]
+inputs:
+  team:
+    label: "Team"
+    description: "Linear team name or ID"
+    example: "Engineering"
+    required: true
+    type: text
+  sprint:
+    label: "Sprint"
+    description: "Sprint or cycle name. Leave empty for the current active cycle."
+    example: "Sprint 24"
+    required: false
+    type: text
 connections:
   - target: ticket-fetch
     type: derived_from
