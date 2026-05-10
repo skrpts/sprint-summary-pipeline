@@ -38,15 +38,27 @@ execution:
     - skill: "status-categorisation"
       step_type: "synthesis"
       prompt: "categorise-status"
+      context:
+        voice_profile: ""
+        grouping_mode: ""
     - skill: "velocity-analysis"
       step_type: "synthesis"
       prompt: "analyse-velocity"
+      context:
+        velocity_context: ""
   - skill: "report-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-report"
+    context:
+      voice_profile: ""
+      audience_profile: ""
+      report_depth: ""
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-report"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
