@@ -39,26 +39,26 @@ execution:
       step_type: "synthesis"
       prompt: "categorise-status"
       context:
-        voice_profile: ""
-        grouping_mode: ""
+        voice_profile: "Neutral professional tone"
+        grouping_mode: "Automatic"
     - skill: "velocity-analysis"
       step_type: "synthesis"
       prompt: "analyse-velocity"
       context:
-        velocity_context: ""
+        velocity_context: "No additional velocity context"
   - skill: "report-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-report"
     context:
-      voice_profile: ""
-      audience_profile: ""
-      report_depth: ""
+      voice_profile: "Neutral professional tone"
+      audience_profile: "General professional audience"
+      report_depth: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-report"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
