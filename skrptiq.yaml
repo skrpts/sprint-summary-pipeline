@@ -3,7 +3,7 @@ id: "83273727-3341-4f3a-bda7-99585483c940"
 name: "sprint-summary-pipeline"
 display_name: "Sprint Summary Pipeline"
 description: "Pulls sprint tickets from Linear via MCP, analyses velocity and status, and generates a stakeholder-ready sprint report"
-version: "1.0.6"
+version: "1.0.7"
 engine: ">=0.1.0"
 
 # --- Attribution ---
