@@ -5,13 +5,13 @@ title: Sprint Summary Pipeline
 description: "Fetches sprint tickets from Linear via MCP, analyses status and velocity, and generates a stakeholder-ready report"
 tags: [Production, Project Management]
 connections:
-  - target: ticket-fetch
+  - target: fetch-linear-tickets
     type: uses
   - target: status-categorisation
     type: uses
   - target: velocity-analysis
     type: uses
-  - target: report-synthesis
+  - target: synthesise-sprint-report
     type: uses
   - target: language-polish
     type: uses
@@ -25,13 +25,13 @@ metadata:
   trigger: manual
 output_step: "language-polish"
 composite_steps:
-  - "ticket-fetch"
+  - "fetch-linear-tickets"
   - "status-categorisation"
   - "velocity-analysis"
-  - "report-synthesis"
+  - "synthesise-sprint-report"
   - "language-polish"
 execution:
-  - skill: "ticket-fetch"
+  - skill: "fetch-linear-tickets"
     step_type: "generation"
     prompt: "fetch-tickets"
   - parallel:
@@ -46,9 +46,9 @@ execution:
       prompt: "analyse-velocity"
       context:
         velocity_context: "No additional velocity context"
-  - skill: "report-synthesis"
+  - skill: "synthesise-sprint-report"
     step_type: "synthesis"
-    prompt: "synthesise-report"
+    prompt: "synthesise-sprint-report"
     context:
       voice_profile: "Neutral professional tone"
       audience_profile: "General professional audience"

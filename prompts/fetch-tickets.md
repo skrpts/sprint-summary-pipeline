@@ -18,7 +18,7 @@ inputs:
     required: false
     type: text
 connections:
-  - target: ticket-fetch
+  - target: fetch-linear-tickets
     type: derived_from
 metadata:
   output_format: structured
