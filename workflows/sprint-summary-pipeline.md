@@ -34,21 +34,25 @@ execution:
   - skill: "fetch-linear-tickets"
     step_type: "generation"
     prompt: "fetch-tickets"
+    output: { name: "tickets", type: "text" }
   - parallel:
     - skill: "status-categorisation"
       step_type: "synthesis"
       prompt: "categorise-status"
+      output: { name: "status_breakdown", type: "text" }
       context:
         voice_profile: "Neutral professional tone"
         grouping_mode: "Automatic"
     - skill: "velocity-analysis"
       step_type: "synthesis"
       prompt: "analyse-velocity"
+      output: { name: "velocity_metrics", type: "text" }
       context:
         velocity_context: "No additional velocity context"
   - skill: "synthesise-sprint-report"
     step_type: "synthesis"
-    prompt: "synthesise-sprint-report"
+    prompt: "synthesise-report"
+    output: { name: "sprint_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       audience_profile: "General professional audience"
@@ -56,6 +60,7 @@ execution:
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-report"
+    output: { name: "polished_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"

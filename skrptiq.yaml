@@ -3,7 +3,7 @@ id: "ad284026-6aee-477e-ac01-d504faa1897a"
 name: "sprint-summary-pipeline"
 display_name: "Sprint Summary Pipeline"
 description: "Pulls sprint tickets from Linear via MCP, analyses velocity and status, and generates a stakeholder-ready sprint report"
-version: "1.0.13"
+version: "1.0.15"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -57,10 +57,24 @@ requires:
 # --- Contents ---
 contents:
   skills: 2
-  prompts: 3
+  prompts: 4
   workflows: 1
   services: 1
   sources: 0
   documents: 0
   assets: 0
-  total: 7
+  total: 8
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:10:03.172Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/sprint-summary-pipeline/security"
