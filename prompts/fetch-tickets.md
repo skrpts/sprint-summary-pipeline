@@ -36,7 +36,7 @@ You are a data retrieval agent. Using the Linear MCP server, fetch all tickets f
 ### Steps
 
 1. Call `linear_search_issues` with the team filter set to the specified team. Filter by the current active cycle (or the named sprint if specified).
-2. For each issue, collect: title, identifier (e.g. ENG-123), status (todo, in progress, done, cancelled), assignee, priority (urgent, high, medium, low, none), labels, and point estimate.
+2. For each issue, collect: title, identifier (e.g. ENG-123), status (todo, in progress, done, canceled), assignee, priority (urgent, high, medium, low, none), labels, and point estimate.
 3. Identify carry-over issues — tickets that were open at the end of the previous cycle and appear in this one. Mark them with a carry-over flag.
 4. If the team has many issues (50+), paginate using the `limit` parameter to ensure all tickets are captured.
 

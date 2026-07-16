@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: categorise-status
-title: Categorise Status
+title: Categorize Status
 description: "Groups sprint tickets by status, assignee, or label"
 tags: [Production, Project Management]
 connections:
@@ -28,7 +28,7 @@ If a voice profile is provided above, write group summaries in that voice. If no
 
 ## Prompt
 
-You are a categorisation agent. Group the sprint tickets below according to the configured mode.
+You are a categorization agent. Group the sprint tickets below according to the configured mode.
 
 ### Grouping Modes
 
@@ -36,7 +36,7 @@ You are a categorisation agent. Group the sprint tickets below according to the 
 - **Done** — completed in this sprint
 - **In Progress** — actively being worked on
 - **Blocked** — has a blocker or dependency preventing progress
-- **Cancelled** — removed from the sprint scope
+- **Canceled** — removed from the sprint scope
 - **Carried Over** ��� incomplete from the previous sprint
 - Include ticket count and total points per group
 

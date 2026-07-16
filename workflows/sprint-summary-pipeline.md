@@ -2,7 +2,7 @@
 type: workflow
 id: sprint-summary-pipeline
 title: Sprint Summary Pipeline
-description: "Fetches sprint tickets from Linear via MCP, analyses status and velocity, and generates a stakeholder-ready report"
+description: "Fetches sprint tickets from Linear via MCP, analyzes status and velocity, and generates a stakeholder-ready report"
 tags: [Production, Project Management]
 connections:
   - target: fetch-linear-tickets
@@ -68,7 +68,7 @@ execution:
 
 ## Overview
 
-This workflow produces a stakeholder-ready sprint summary from your Linear workspace. It fetches all tickets in a sprint cycle, runs two parallel analysis passes (status categorisation and velocity analysis), synthesises the results into a report, and applies a final language polish.
+This workflow produces a stakeholder-ready sprint summary from your Linear workspace. It fetches all tickets in a sprint cycle, runs two parallel analysis passes (status categorization and velocity analysis), synthesizes the results into a report, and applies a final language polish.
 
 The report adapts to your audience: choose executive (brief, outcomes-focused), standard (balanced), or detailed (full per-ticket breakdown).
 
@@ -86,9 +86,9 @@ Using the Linear MCP service, fetch all issues in the specified sprint cycle wit
 
 Two analysis agents run concurrently:
 
-#### 2a. Status Categorisation
+#### 2a. Status Categorization
 
-Groups tickets by status (Done, In Progress, Blocked, Cancelled, Carried Over), by assignee, or by label. Configurable via the `grouping_mode` persona dial.
+Groups tickets by status (Done, In Progress, Blocked, Canceled, Carried Over), by assignee, or by label. Configurable via the `grouping_mode` persona dial.
 
 #### 2b. Velocity Analysis
 
@@ -134,7 +134,7 @@ Before running this workflow:
 
 ## Provider Notes
 
-- Status categorisation and velocity analysis are analytical tasks — most models handle them well.
+- Status categorization and velocity analysis are analytical tasks — most models handle them well.
 - Report synthesis benefits from a model with strong writing capabilities, especially for the executive summary.
 - The pipeline is moderate on token usage — no long-context requirements.
 

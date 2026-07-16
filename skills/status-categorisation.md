@@ -1,8 +1,8 @@
 ---
 type: skill
 id: status-categorisation
-title: Status Categorisation
-description: "Groups sprint tickets by status — done, in progress, blocked, cancelled, and carried over"
+title: Status Categorization
+description: "Groups sprint tickets by status — done, in progress, blocked, canceled, and carried over"
 tags: [Production, Project Management]
 connections:
   - target: llm-service
@@ -30,7 +30,7 @@ Takes the raw ticket set and groups issues into status categories. The grouping 
 
 ## What It Does
 
-1. **By Status** (default) — groups tickets as: Done, In Progress, Blocked, Cancelled, Carried Over. Includes count and point totals per group.
+1. **By Status** (default) — groups tickets as: Done, In Progress, Blocked, Canceled, Carried Over. Includes count and point totals per group.
 2. **By Assignee** — groups tickets under each team member, showing their status breakdown and point load
 3. **By Label** — groups tickets by area label (frontend, backend, infrastructure, etc.) with status counts per area
 

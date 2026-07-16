@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: analyse-velocity
-title: Analyse Velocity
+title: Analyze Velocity
 description: "Computes sprint velocity metrics and trend analysis"
 tags: [Production, Project Management]
 connections:
@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Analyses the ticket set to compute sprint velocity: points delivered vs planned, completion rate, and trend comparison if historical data is available.
+Analyzes the ticket set to compute sprint velocity: points delivered vs planned, completion rate, and trend comparison if historical data is available.
 
 ## Configuration
 

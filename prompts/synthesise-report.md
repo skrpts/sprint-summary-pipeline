@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: synthesise-report
-title: Synthesise Report
+title: Synthesize Report
 description: "Combines status breakdown and velocity into a stakeholder-ready sprint report"
 tags: [Production, Project Management]
 connections:
@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Merges the status categorisation and velocity analysis into a single sprint report, adapted to the target audience.
+Merges the status categorization and velocity analysis into a single sprint report, adapted to the target audience.
 
 ## Voice Profile
 
@@ -60,7 +60,7 @@ You are a report synthesis agent. Combine the status breakdown and velocity metr
 
 ### Input
 
-- **Status breakdown:** {{steps.Status Categorisation.output}}
+- **Status breakdown:** {{steps.Status Categorization.output}}
 - **Velocity metrics:** {{steps.Velocity Analysis.output}}
 
 ### Formatting Rules
@@ -69,4 +69,4 @@ You are a report synthesis agent. Combine the status breakdown and velocity metr
 - Use markdown headings, tables, and bullets for scannability
 - Lead with the executive summary — assume the reader has 60 seconds
 - Use ticket identifiers (ENG-123) when referencing specific issues
-- Do not include raw data dumps — synthesise into readable prose with supporting numbers
+- Do not include raw data dumps — synthesize into readable prose with supporting numbers

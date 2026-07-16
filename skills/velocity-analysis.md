@@ -16,7 +16,7 @@ context_params:
 
 ## Capability
 
-Analyses the ticket set to compute sprint velocity metrics: points completed, points planned, completion rate, and (if previous data is provided) trend comparison.
+Analyzes the ticket set to compute sprint velocity metrics: points completed, points planned, completion rate, and (if previous data is provided) trend comparison.
 
 ## When to Use
 

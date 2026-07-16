@@ -62,4 +62,4 @@ Linear's API allows 1,500 requests per hour. The pipeline typically consumes 5â€
 
 ## Privacy Considerations
 
-Issue titles, descriptions, and assignee names are sent to your configured LLM provider for analysis and report generation. Ensure your organisation's policies permit sending project management data to third-party AI services.
+Issue titles, descriptions, and assignee names are sent to your configured LLM provider for analysis and report generation. Ensure your organization's policies permit sending project management data to third-party AI services.
