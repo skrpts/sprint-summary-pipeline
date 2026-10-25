@@ -1,5 +1,17 @@
 # Release Notes
 
+## v1.0.17
+GH#1100 consumer wave (batch 1) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: every binding names the step that immediately precedes it, which is exactly what the positional default resolved to. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `polish-report` ← `from_step: "Report Synthesis"` (step 5)
+
+Dependency pins moved to the published versions that declare these slots:
+  `polish-report` 1.0.3 → 1.0.4
+  `synthesise-sprint-report` 1.0.1 → 1.0.2
+
 ## v1.0.16
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

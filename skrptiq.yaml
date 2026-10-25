@@ -3,7 +3,7 @@ id: "ad284026-6aee-477e-ac01-d504faa1897a"
 name: "sprint-summary-pipeline"
 display_name: "Sprint Summary Pipeline"
 description: "Pulls sprint tickets from Linear via MCP, analyzes velocity and status, and generates a stakeholder-ready sprint report"
-version: "1.0.16"
+version: "1.0.17"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -39,12 +39,12 @@ dependencies:
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "7b318111-b190-4ac6-b95d-448178de97b6"
     name: "polish-report"
-    version: 1.0.3
-    checksum: "sha256:5d7d6f72301dbf5363b325a7aaed5929a5677d13cde7bca820a0bef255b8b5ad"
+    version: 1.0.4
+    checksum: "sha256:dbbae9acead0bba1a9dcaaa945ade9be136499846a01f037574aa63e58042d1d"
   - id: "1d8bc02b-1f37-4c9e-a5bc-45c5e38bd6e8"
     name: "synthesise-sprint-report"
-    version: 1.0.1
-    checksum: "sha256:65b1724e912c723f0bdbef725a3507d10c9114d0fa1cc753265e96ccc724206d"
+    version: 1.0.2
+    checksum: "sha256:ec099bbd73e9f127616914acc4d349bbcb0fa7109217aaaa423bc0bd27fee7b1"
 
 requires:
   services:
@@ -67,7 +67,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-16T20:31:14.740Z"
+  scanned_at: "2026-10-25T21:56:49.300Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
